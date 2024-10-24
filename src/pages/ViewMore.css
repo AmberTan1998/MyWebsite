@@ -1,0 +1,60 @@
+.view-container{
+    background: linear-gradient(180deg, #DAEDFF 20%, #FAF1DD 100%);
+    width: 1280px;
+}
+
+.view-container h1{
+    position: relative;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: justify;
+    margin: 120px 80px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000000;
+}
+
+.arrow_top{
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    transform: rotate(180deg);
+    top: 140px;
+    left: 640px;
+}
+
+.education{
+    display: flex;
+    flex-direction: column;
+}
+
+.education h2{
+    display: flex;
+    font-size: xx-large;
+    margin: 20px 80px;
+    border-bottom: 1px solid #000000;
+
+}
+
+.wrapper{
+    display: flex;
+}
+
+.text-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 80px;
+}
+
+.text-wrapper h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px;
+}
+
+
+.text-wrapper img{
+    width: 200px;
+    height: 200px;
+}
+
+

@@ -1,0 +1,55 @@
+/* 设置页面的整体布局 */
+.container {
+  display: flex;
+  min-width: 1280px;
+  min-height: 100vh;
+}
+
+/* 左侧文本和按钮容器 */
+.text-container {
+  position: relative;
+  margin: 100px;   /* 左右边距 */
+  flex-direction: column; 
+}
+
+.spline-background {
+  position: relative;
+  background-color: #CFD7EC;
+  transform: rotate(90deg);
+}
+
+.spline{
+  margin-left: 5px;
+}
+
+/* 标题样式 */
+.title {
+  text-align: center;
+  font-size: 80px;
+  font-family: "Inter-Black", Helvetica;
+  font-weight: bold;
+  color: #6f79a8;
+}
+
+/* 按钮容器 */
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 设置按钮的样式 */
+.button {
+  display: block;
+  width: 420px;
+  height: 100px;
+  margin: 20px 0;
+  font-size: 30px;
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  cursor: pointer;
+  color: rgba(102, 140, 255, 0.6)
+}
+.button:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
