@@ -1,13 +1,18 @@
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3 1fr);
-    gap: 20px;
+    gap: 5px;
+
 }
 
 .grid-photo{
-    margin: auto;
+    margin-top: 10px;
+    margin-left:10px;
 }
 
 .grid-photo img{
-    margin: 10px;
+    margin: 6px;
+    margin-top: 40px;
+    margin-left:18px;
+    border-radius: 5px;
 }

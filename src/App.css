@@ -1,34 +1,57 @@
+@font-face {
+  font-family: 'ArialBlack'; /* 给字体取一个名称 */
+  src: url('./assets/Arial Black.ttf') format('truetype'); /* 使用相对路径加载字体 */
+  font-weight: normal;
+  font-style: normal;
+}
 /* 设置页面的整体布局 */
 .container {
   display: flex;
-  min-width: 1280px;
-  min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  z-index: 1;
 }
 
 /* 左侧文本和按钮容器 */
 .text-container {
-  position: relative;
-  margin: 100px;   /* 左右边距 */
-  flex-direction: column; 
+    width: 40%; /* 左侧区域占 40% */
+    background-color: #A9A9A9; /* 蓝色背景 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* 确保内容在 3D 背景上层 */
+    padding: 10px;
+    margin-top: -60px;
 }
 
 .spline-background {
+  width: 60%; /* 右侧区域占 60% */
   position: relative;
-  background-color: #CFD7EC;
-  transform: rotate(90deg);
+  overflow: hidden;
+  transform: scale(1.6);
 }
 
-.spline{
-  margin-left: 5px;
+/* 3D 资源的样式，确保它撑满右侧 */
+.spline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* 标题样式 */
 .title {
   text-align: center;
-  font-size: 80px;
-  font-family: "Inter-Black", Helvetica;
+  font-size: 70px;
+  margin-top: 80px;
+  font-family: 'ArialBlack', sans-serif;
   font-weight: bold;
-  color: #6f79a8;
+  color:rgba(6, 16, 44, 0.6)；
+  
 }
 
 /* 按钮容器 */
@@ -39,17 +62,20 @@
 
 /* 设置按钮的样式 */
 .button {
-  display: block;
-  width: 420px;
-  height: 100px;
-  margin: 20px 0;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  width: 350px;
+  height: 60px;
+  margin: 20px;
   font-size: 30px;
   font-weight: 700;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   cursor: pointer;
-  color: rgba(102, 140, 255, 0.6)
+  color: rgba(6, 16, 44, 0.6)
+
 }
 .button:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #ffffffaa);
 }

@@ -1,48 +1,68 @@
 import React from 'react'
 import './Viewmore.css'
 import arrow from '../assets/right-arrow.png';
-import circle from '../assets/circle.png';
+import ullogo from '../assets/ullogo.png';
+import bclogo from '../assets/bclogo.png';
+import inkdeeps from '../assets/inkdeeps.png';
+import mao from '../assets/mao.png';
 
 function ViewMore() {
   return (
     <div className='container'>
         <div className='view-container'>
-            <img src={arrow} alt="arrow" className='arrow_top' />
+        <img src={arrow} alt="arrow" className='arrow_top' />
             <h1>About me</h1>
             <div className="education">
                 <h2>Education</h2>
-                <div className="wrapper">
-                    <div className='text-wrapper'>
-                        <img src={circle} alt="circile-img" />
-                        <div>
-                            <h3>My name is </h3>
-                            <h3>Hi you are my</h3>
+                <div className="wrapper1">
+                    <div className='text-wrapper1'>
+                        <img src={ullogo} alt="ullogo-img" />
+                        <div className='education-text'>
+                            <span>Currently</span>
+                            <p>
+                                University of Limerick <br />
+                                Interaction and Experience Design
+                            </p>
                         </div>
                     </div>
-                    <div className='text-wrapper'>
-                        <img src={circle} alt="circile-img" />
-                        <div>
-                            <h3>My name is </h3>
-                            <h3>Hi you are my</h3>
+                    <div className='text-wrapper2'>
+                        <img src={bclogo} alt="bclogo-img" />
+                        <div className='education-text'>
+                            <span>Bachelor</span>
+                            <p>
+                                Beijing City University<br /> 
+                                Digital and Media Arts
+                            </p>
+                            
                         </div>
                     </div>
                 </div>
             </div>
             <div className="education">
-                <h2>Work</h2>
-                <div className="wrapper">
-                    <div className='text-wrapper'>
-                        <img src={circle} alt="circile-img" />
-                        <div>
-                            <h3>My name is </h3>
-                            <h3>Hi you are my</h3>
+                <h2>Work Experience</h2>
+                <div className="wrapper2">
+                    <div className='text-wrapper3'>
+                        <img src={inkdeeps} alt="inkdeeps-img" />
+                        <div className='education-text'>
+                            <span>Shanghai Inkdeeps Tech Ltd.</span>
+                            <p>
+                                Head of design department <br />
+                                · Creating framework diagrams for software developments<br/>
+                                · Providing professional design advices to clients in the early stages<br />
+                                · Internal team management 
+                            </p>
                         </div>
                     </div>
-                    <div className='text-wrapper'>
-                        <img src={circle} alt="circile-img" />
-                        <div>
-                            <h3>My name is </h3>
-                            <h3>Hi you are my</h3>
+                    <div className='text-wrapper4'>
+                        <img src={mao} alt="mao-img" />
+                        <div className='education-text'>
+                            <span>Shanghai Huichengen Tech Ltd. </span>
+                            <p>
+                                Marketing Intern
+                                · Docking with production suppliers <br />
+                                · Organising the progresses of daily production work <br />
+                                · Engaging with the design department
+                            </p>
                         </div>
                     </div>
                 </div>
